@@ -1,4 +1,6 @@
 
+import { Meteors } from "@/components/ui/meteors";
+
 const ProblemSection = () => {
   const painPoints = [
     {
@@ -19,8 +21,8 @@ const ProblemSection = () => {
   ];
 
   return (
-    <section id="problems" className="bg-gradient-dark py-20">
-      <div className="container mx-auto px-4">
+    <section id="problems" className="bg-gradient-dark py-20 relative overflow-hidden">
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="section-title">
             <span className="gradient-text">70%</span> of students struggle with inefficient study habits
@@ -44,6 +46,9 @@ const ProblemSection = () => {
           ))}
         </div>
       </div>
+      
+      {/* Added Meteors component for visual effect */}
+      <Meteors number={30} className="text-vibrantYellow" />
     </section>
   );
 };
