@@ -1,5 +1,6 @@
 
 import { Button } from "@/components/ui/button";
+import { PlayCircle } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -34,41 +35,13 @@ const HeroSection = () => {
                 </div>
                 <div className="text-sm text-white/70 truncate">NoteCraft Tutor - AI Study Assistant</div>
               </div>
-              <div className="grid md:grid-cols-2 gap-4 p-6">
-                <div className="bg-darkGray rounded-lg p-4 animate-float">
-                  <h3 className="text-vibrantYellow font-medium mb-2">Your Notes</h3>
-                  <div className="h-52 overflow-hidden rounded bg-richBlack p-3">
-                    <div className="text-sm text-left text-white/80">
-                      <p className="mb-1">The mitochondria is the powerhouse of the cell.</p>
-                      <p className="mb-1">It generates most of the cell's supply of adenosine triphosphate (ATP).</p>
-                      <p className="mb-1">ATP is used as a source of chemical energy.</p>
-                      <p className="mb-1">The number of mitochondria in a cell varies depending on the cell type.</p>
-                      <p className="mb-1">Mitochondria are surrounded by a double membrane.</p>
-                      <p>The inner membrane is folded into cristae.</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="bg-darkGray rounded-lg p-4 animate-float" style={{ animationDelay: "0.2s" }}>
-                  <h3 className="text-vibrantYellow font-medium mb-2">Your AI Tutor</h3>
-                  <div className="h-52 overflow-hidden rounded bg-richBlack p-3">
-                    <div className="flex flex-col gap-2 text-sm text-left">
-                      <div className="text-white/80">
-                        <p>Ask anything about mitochondria...</p>
-                      </div>
-                      <div className="bg-vibrantYellow/10 p-2 rounded-lg border-l-2 border-vibrantYellow">
-                        <p className="text-white">What are the key functions of mitochondria?</p>
-                      </div>
-                      <div className="bg-darkCharcoal p-2 rounded-lg">
-                        <p className="text-white/80">Mitochondria have several key functions:</p>
-                        <ul className="list-disc pl-4 text-white/80">
-                          <li>Generate ATP through cellular respiration</li>
-                          <li>Regulate cellular metabolism</li>
-                          <li>Control cell growth and cell cycle</li>
-                          <li>Involved in apoptosis (programmed cell death)</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
+              
+              <div className="relative aspect-video w-full bg-richBlack flex flex-col items-center justify-center p-8">
+                <div className="absolute inset-0 bg-gradient-to-tr from-vibrantYellow/5 to-softAmber/5"></div>
+                <div className="relative z-10 flex flex-col items-center">
+                  <PlayCircle className="w-20 h-20 text-vibrantYellow mb-4 animate-pulse" />
+                  <p className="text-white text-lg font-medium">See how NoteCraft works</p>
+                  <p className="text-white/60 text-sm mt-2">Watch our 2-minute demo video</p>
                 </div>
               </div>
             </div>
