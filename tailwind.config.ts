@@ -130,6 +130,14 @@ export default {
 					'50%': {
 						transform: 'translateY(-10px)'
 					}
+				},
+				'meteor': {
+					'0%': { transform: 'rotate(215deg) translateX(0)', opacity: '1' },
+					'70%': { opacity: '1' },
+					'100%': {
+						transform: 'rotate(215deg) translateX(-500px)',
+						opacity: '0'
+					},
 				}
 			},
 			animation: {
@@ -137,7 +145,8 @@ export default {
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.5s ease-out',
 				'scale-in': 'scale-in 0.3s ease-out',
-				'float': 'float 6s ease-in-out infinite'
+				'float': 'float 6s ease-in-out infinite',
+				'meteor-effect': 'meteor 5s linear infinite',
 			},
 			fontFamily: {
 				'poppins': ['Poppins', 'sans-serif'],
